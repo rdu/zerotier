@@ -1,7 +1,7 @@
-FROM alpine:3.8
+FROM alpine:latest
 LABEL maintainer="tw@travis.wang"
 
-RUN apk add --no-cache zerotier-one --repository http://dl-cdn.alpinelinux.org/alpine/edge/testing
+RUN apk add --no-cache zerotier-one
 
 ADD ./entrypoint.sh /bin/entrypoint.sh
 
